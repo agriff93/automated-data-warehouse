@@ -8,7 +8,7 @@ Transforms both datasets
 Loads them into a PostgreSQL Data Warehouse
 
 ## Architecture
-![Architecture](docs/architecture.png)
+![Architecture](automated-data-warehouse/docs/architecture.png)
 
 ## Features
 Dockerized PostgreSQL Warehouse
