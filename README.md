@@ -1,2 +1,22 @@
-# automated-data-warehouse
-Dockerized ETL pipeline running on Amazon Linux EC2. A Python container pulls hourly weather data from a public API, transforms it, and loads it into a PostgreSQL data warehouse container. Demonstrates cloud deployment, containerization, API ingestion, and data engineering workflow design..
+# Automated Data Warehouse (Python + Docker + PostgreSQL)
+
+## Overview
+This project contains an ETL pipeline that:
+Extracts weather data from an API
+Extracts public CSV data
+Transforms both datasets
+Loads them into a PostgreSQL Data Warehouse
+
+## Architecture
+![Architecture](docs/architecture.png)
+
+## Features
+Dockerized PostgreSQL Warehouse
+Python ETL using SQLAlchemy, Pandas, Requests
+SQL schema files included
+Easily extendable to Airflow, dbt, S3
+
+## Quickstart
+docker-compose up -d
+python3 etl/etl_weather_csv_to_postgres.py
+psql -h localhost -U etl -d warehouse
